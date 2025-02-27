@@ -3,7 +3,6 @@ package me.game;
 import me.game.movement.Keys;
 import me.game.movement.MovePlayer;
 import me.game.movement.Tick;
-import me.game.objects.creatures.Creature;
 import me.game.objects.creatures.Player;
 
 import javax.swing.*;
@@ -29,7 +28,6 @@ public class Game extends JFrame {
         display = new Display(this);
         map = new GameMap(40);
         player = new Player(this, 1, getSpeed());
-
 
         addKeyListener(keys);
 

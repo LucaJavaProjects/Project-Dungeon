@@ -40,7 +40,6 @@ public class Player extends Creature {
         double radiusOnScreen = radius * tileSize;
         double diameterOnScreen = radiusOnScreen * 2.0;
 
-        System.out.println(centerXOnScreen);
 
         g.drawImage(new ImageIcon(Objects.requireNonNull(getClass().getClassLoader().getResource(new Images().getPlayerImage()))).getImage(), (int) (centerXOnScreen - radiusOnScreen), (int) (centerYOnScreen - radiusOnScreen), (int) diameterOnScreen, (int) diameterOnScreen, null);
     }
